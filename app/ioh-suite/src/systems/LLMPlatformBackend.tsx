@@ -15,6 +15,7 @@ import {
   SelectValue
 } from '@/components/ui/select'
 import { CartesianGrid, Line, LineChart as ReLineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import TastTable from './components/tastTable'
 
 export default function IOHStage1MVP() {
   const [prompt, setPrompt] = useState('')
@@ -217,6 +218,9 @@ export default function IOHStage1MVP() {
                 )}
               </CardContent>
             </Card>
+            {/* 这里要增加一个table */}
+            <TastTable></TastTable>
+
           </TabsContent>
 
           <TabsContent value="monitor" className="space-y-4">
